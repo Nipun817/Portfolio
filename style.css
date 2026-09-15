@@ -2,3 +2,52 @@
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}.reveal{opacity:0;transform:translateY(25px);animation:reveal .8s .15s forwards}@keyframes reveal{to{opacity:1;transform:none}}.cursor,.cursor-dot{position:fixed;pointer-events:none;z-index:200;border-radius:50%;display:none}.cursor{width:35px;height:35px;border:1px solid #fff5;mix-blend-mode:difference}.cursor-dot{width:5px;height:5px;background:#fff;mix-blend-mode:difference}
 @media(min-width:900px){body{cursor:none}.cursor,.cursor-dot{display:block}}@media(max-width:850px){.nav nav{display:none}.nav button{display:block}.resume-btn{display:none}.hero{grid-template-columns:1fr;padding-top:120px}.hero-visual{height:400px}.about-grid{grid-template-columns:1fr;gap:35px}.skill-cloud{grid-template-columns:1fr 1fr}.project-heading{display:block}.project-heading p{margin-top:20px}.time-item{grid-template-columns:1fr;gap:10px}.edu{display:block}.edu-side{text-align:left;margin-top:30px}.contact{padding:100px 7%}}
 @media(max-width:550px){.hero{padding-left:6%;padding-right:6%}.hero h1{letter-spacing:-4px}.hero-visual{height:350px}.code-card{width:94%;font-size:10px}.orb{width:270px;height:270px}.float-card{display:none}.stats{gap:20px}.stats strong{font-size:18px}.skill-cloud,.projects{grid-template-columns:1fr}.project{min-height:350px}.project h3{font-size:25px}.section{padding:90px 6%}.contact h2{letter-spacing:-4px}footer{padding:25px 6%;display:block}footer p{margin-top:8px}}
+
+/* Enhanced professional interactions */
+.nav nav a{position:relative;padding:10px 0;overflow:hidden}
+.nav nav a::before{content:"";position:absolute;left:0;right:0;bottom:3px;height:1px;background:var(--lime);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}
+.nav nav a::after{content:"↗";position:absolute;right:-14px;top:8px;font-size:9px;color:var(--lime);opacity:0;transform:translate(-4px,4px);transition:.25s ease}
+.nav nav a:hover,.nav nav a.active{color:#fff;transform:translateY(-1px)}
+.nav nav a:hover::before,.nav nav a.active::before{transform:scaleX(1);transform-origin:left}
+.nav nav a:hover::after,.nav nav a.active::after{opacity:1;transform:translate(0,0)}
+.project{min-height:500px}
+.project-visual{height:150px;margin:20px 0 24px;border:1px solid #222;border-radius:9px;overflow:hidden;background:#0b0b0b;position:relative;transition:.4s ease}
+.project-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,#e8ff6412 50%,transparent 70%);transform:translateX(-120%);transition:.7s ease}
+.project:hover .project-visual{border-color:#3b3b3b;transform:translateY(-2px)}
+.project:hover .project-visual::after{transform:translateX(120%)}
+.project-visual img{width:100%;height:100%;display:block;object-fit:cover;opacity:.9;transition:.4s ease}
+.project:hover .project-visual img{transform:scale(1.025);opacity:1}
+.project .p-content{margin-top:auto}
+.contact-social a{transition:.25s ease}
+.contact-social a:hover{color:#000;transform:translateY(-2px);border-color:#000}
+@media(max-width:550px){.project{min-height:460px}.project-visual{height:125px}}
+
+/* CV certificate cards */
+.certificates-heading{margin:2.5rem 0 1rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.cert-card{position:relative;padding:1.35rem;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.cert-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.18);box-shadow:0 16px 35px rgba(0,0,0,.22)}
+.cert-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.1rem}
+.cert-icon{display:inline-flex;align-items:center;justify-content:center;width:38px;height:30px;border-radius:9px;background:rgba(255,255,255,.08);font-size:.7rem;font-weight:700;letter-spacing:.08em}
+.cert-date{font-size:.72rem;color:var(--muted);letter-spacing:.05em}
+.cert-card h3{margin:0 0 .45rem;font-size:1.02rem;line-height:1.35}.cert-card p{margin:0;color:var(--muted);font-size:.86rem}
+@media (max-width:700px){.cert-grid{grid-template-columns:1fr}}
+
+
+/* CV training section */
+.training-points{
+  position:relative;
+  margin:.9rem 0 0;
+  padding-left:1.15rem;
+  color:var(--muted);
+  font-size:.88rem;
+  line-height:1.65;
+}
+.training-points li{
+  margin:.3rem 0;
+}
+.time-org{
+  margin:.25rem 0 0;
+  color:var(--muted);
+  font-size:.8rem;
+}

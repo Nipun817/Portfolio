@@ -16,3 +16,16 @@ document.querySelectorAll('.skill-card,.project').forEach(card=>{
 });
 const menu=document.getElementById('menu');
 menu.addEventListener('click',()=>document.querySelector('.nav nav').classList.toggle('open'));
+
+
+// Active navigation state
+const navLinks = document.querySelectorAll('.nav nav a');
+const sections = [...navLinks].map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+const navObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+    }
+  });
+},{rootMargin:'-35% 0px -55% 0px', threshold:0});
+sections.forEach(section => navObserver.observe(section));

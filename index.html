@@ -15,7 +15,7 @@
 <header class="nav">
   <a class="brand" href="#home">NM<span>.</span></a>
   <nav>
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Training</a><a href="#contact">Contact</a>
+    <a href="#about" data-text="About">About</a><a href="#skills" data-text="Skills">Skills</a><a href="#projects" data-text="Projects">Projects</a><a href="#experience" data-text="Training">Training</a><a href="#contact" data-text="Contact">Contact</a>
   </nav>
   <div class="nav-actions">
     <a class="resume-btn" href="mailto:nipunmangla2006@gmail.com">Let's Talk ↗</a>
@@ -92,21 +92,35 @@
   <div class="section-label">03 <span>Selected work</span></div>
   <div class="project-heading"><h2>Projects that<br><span>tell the story.</span></h2><p>Hover over a project to explore the idea behind it.</p></div>
   <div class="projects">
-    <article class="project p1"><div class="p-top"><span>01</span><span>SECURITY</span></div><div class="p-content"><div><h3>Real-Time System Monitor<br>& Security Dashboard</h3><p>Full-stack OS-level monitoring that detects high-resource processes and unauthorized network activity, with automated alerts and mitigation suggestions.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>FastAPI</b><b>psutil</b><b>JavaScript</b></div><a href="https://github.com/Nipun817" target="_blank">View on GitHub ↗</a></div></div></article>
-    <article class="project p2"><div class="p-top"><span>02</span><span>DATA SCIENCE</span></div><div class="p-content"><div><h3>Gold, S&P 500<br>& Monetary Policy</h3><p>Time-series study of inflation, interest rates and asset prices across economic cycles, using GARCH, VAR and impulse response analysis.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>GARCH</b><b>VAR</b><b>Power BI</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
-    <article class="project p3"><div class="p-top"><span>03</span><span>DSA / C++</span></div><div class="p-content"><div><h3>Hospital Queue<br>Management System</h3><p>Patient-flow system with emergency prioritization, instant record lookup and treatment-history management using custom data structures.</p></div><div class="p-bottom"><div class="tags"><b>C++</b><b>Queue</b><b>Linked List</b><b>Hashing</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
-    <article class="project p4"><div class="p-top"><span>04</span><span>ANALYTICS</span></div><div class="p-content"><div><h3>Bitcoin Market<br>Analysis</h3><p>Fourteen years of historical Bitcoin data analyzed for volatility, trends and return patterns to support investment analysis.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>Pandas</b><b>NumPy</b><b>Matplotlib</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
+    <article class="project p1"><div class="p-top"><span>01</span><span>SECURITY</span></div><div class="project-visual"><img src="assets/security-dashboard.svg" alt="Security monitoring dashboard preview"></div><div class="p-content"><div><h3>Real-Time System Monitor<br>& Security Dashboard</h3><p>Full-stack OS-level monitoring that detects high-resource processes and unauthorized network activity, with automated alerts and mitigation suggestions.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>FastAPI</b><b>psutil</b><b>JavaScript</b></div><a href="https://github.com/Nipun817" target="_blank">View on GitHub ↗</a></div></div></article>
+    <article class="project p2"><div class="p-top"><span>02</span><span>DATA SCIENCE</span></div><div class="project-visual"><img src="assets/market-analysis.svg" alt="Gold and S&P 500 market analysis preview"></div><div class="p-content"><div><h3>Gold, S&P 500<br>& Monetary Policy</h3><p>Time-series study of inflation, interest rates and asset prices across economic cycles, using GARCH, VAR and impulse response analysis.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>GARCH</b><b>VAR</b><b>Power BI</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
+    <article class="project p3"><div class="p-top"><span>03</span><span>DSA / C++</span></div><div class="project-visual"><img src="assets/hospital-queue.svg" alt="Hospital queue management system preview"></div><div class="p-content"><div><h3>Hospital Queue<br>Management System</h3><p>Patient-flow system with emergency prioritization, instant record lookup and treatment-history management using custom data structures.</p></div><div class="p-bottom"><div class="tags"><b>C++</b><b>Queue</b><b>Linked List</b><b>Hashing</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
+    <article class="project p4"><div class="p-top"><span>04</span><span>ANALYTICS</span></div><div class="project-visual"><img src="assets/bitcoin-analysis.svg" alt="Bitcoin market analysis preview"></div><div class="p-content"><div><h3>Bitcoin Market<br>Analysis</h3><p>Fourteen years of historical Bitcoin data analyzed for volatility, trends and return patterns to support investment analysis.</p></div><div class="p-bottom"><div class="tags"><b>Python</b><b>Pandas</b><b>NumPy</b><b>Matplotlib</b></div><a href="https://github.com/Nipun817" target="_blank">Explore ↗</a></div></div></article>
   </div>
 </section>
 
 <section id="experience" class="section">
   <div class="section-label">04 <span>Training & certifications</span></div>
   <div class="timeline">
-    <div class="time-item"><div class="date">JUN — JUL 2026</div><div><h3>Artificial Intelligence: From Basics to Agentic AI</h3><p>Centre for Professional Enhancement, LPU</p><small>Machine Learning · Deep Learning · Soft Computing · Fuzzy Logic · Agentic AI</small></div></div>
-    <div class="time-item"><div class="date">AUG 2026</div><div><h3>Competitive Programming</h3><p>Coding Spoon</p><small>LeetCode practice, algorithmic trade-offs and structured assessments.</small></div></div>
+    <div class="time-item">
+      <div class="time-meta">Jun ’26 – Jul ’26</div>
+      <div>
+        <h3>Mastering Data Structures and Algorithms</h3>
+        <p class="time-org">Training · Certificate</p>
+        <ul class="training-points">
+          <li>Strengthened understanding of core data structures and algorithms through structured problem-solving and implementation.</li>
+          <li>Applied Queues, Linked Lists, and Hash Tables to develop a Hospital Queue Management System in C++.</li>
+          <li>Improved algorithmic problem-solving skills through practical solutions and analysis of time and space complexity.</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="cert-list">
-    <span>IBM · Data Analysis with Python</span><span>IBM · Data Science 101</span><span>Infosys · DBMS</span><span>Infosys · Data Visualization</span><span>NeoCoLab · DSA / Java / C++ / C</span><span>HackerRank · Python / SQL / Problem Solving</span><span>HP LIFE · Data Science & Analytics</span>
+  <div class="certificates-heading">Certificates</div>
+  <div class="cert-grid">
+    <div class="cert-card"><div class="cert-top"><span class="cert-icon">01</span><span class="cert-date">Sep ’26</span></div><h3>Database Management System</h3><p>Infosys Springboard</p></div>
+    <div class="cert-card"><div class="cert-top"><span class="cert-icon">02</span><span class="cert-date">Jul ’26</span></div><h3>Java Programming</h3><p>Neo Colab</p></div>
+    <div class="cert-card"><div class="cert-top"><span class="cert-icon">03</span><span class="cert-date">Aug ’26</span></div><h3>Java</h3><p>Hacker Rank</p></div>
+    <div class="cert-card"><div class="cert-top"><span class="cert-icon">04</span><span class="cert-date">Aug ’26</span></div><h3>C Programming</h3><p>Hacker Rank</p></div>
   </div>
 </section>
 
@@ -120,7 +134,7 @@
     <p class="eyebrow">06 — Contact</p>
     <h2>Have an idea?<br><em>Let's talk.</em></h2>
     <a class="email" href="mailto:nipunmangla2006@gmail.com">nipunmangla2006@gmail.com <span>↗</span></a>
-    <div class="contact-social"><a href="https://github.com/Nipun817" target="_blank">GitHub</a><a href="https://linkedin.com/in/nipun-mangla" target="_blank">LinkedIn</a><a href="tel:+917027314393">Phone</a></div>
+    <div class="contact-social"><a href="https://github.com/Nipun817" target="_blank">GitHub</a><a href="https://linkedin.com/in/nipun-mangla" target="_blank">LinkedIn</a><a href="tel:+917027314393">+91 70273 14393</a></div>
   </div>
 </section>
 </main>
